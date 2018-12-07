@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FANDDLE</title>
+    <link rel="stylesheet" href="/common/common.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <section id="fd-loginContainer" class="vertical-gradient fd-flex-col fd-align-center fd-justy-around">
+        <div class="fd-loginLangBox">
+            <!-- language setting -->
+            <a href="#" class="fd-langBox"></a>
+        </div>
+        <div class="fd-loginTitle">팬들 로그인하기</div>
+        <form action="post" class="fd-loginBox">
+            <div class="fd-login">
+                <input type="text" placeholder="팬들 아이디">
+            </div>
+            <div class="fd-login">
+                <input type="password" placeholder="비밀번호">
+            </div>
+            <div class="fd-loginBtn">
+                <!-- input box에 입력시, button.typed class 추가 -->
+                <button class="typed">로그인</button>
+            </div>
+            <div class="fd-loginSave">
+                <label class="fd-loginSaveLabel">
+                    <input type="checkbox" id="" value="" aria-label="..." class="">
+                    <i class="check-icon"></i>
+                    계정 기억하기
+                </label>
+            </div>
+        </form>
+        <div class="fd-snsLoginBox">
+            <div class="fd-snsLogin fd-flex">
+                <div class="fd-snsLoginIcon fd-flex fd-align-center fd-justy-center">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="fd-snsLoginTitle fd-flex fd-align-center fd-justy-center">페이스북 계정으로 로그인 하기</div>
+            </div>
+            <div class="fd-snsLogin fd-flex">
+                <div class="fd-snsLoginIcon fd-flex fd-align-center fd-justy-center">
+                    <div class="fd-snsIcon kakao"></div>
+                </div>
+                <div class="fd-snsLoginTitle fd-flex fd-align-center fd-justy-center">카카오톡 계정으로 로그인 하기</div>
+            </div>
+            <div class="fd-snsLogin fd-flex">
+                <div class="fd-snsLoginIcon fd-flex fd-align-center fd-justy-center">
+                    <div class="fd-snsIcon naver"></div>
+                </div>
+                <div class="fd-snsLoginTitle fd-flex fd-align-center fd-justy-center">네이버 계정으로 로그인 하기</div>
+            </div>
+            <div class="fd-snsLogin fd-flex">
+                <div class="fd-snsLoginIcon fd-flex fd-align-center fd-justy-center">
+                    <div class="fd-snsIcon line"></div>
+                </div>
+                <div class="fd-snsLoginTitle fd-flex fd-align-center fd-justy-center">라인 계정으로 로그인 하기</div>
+            </div>
+        </div>
+        <div class="fd-loginFooter fd-flex fd-align-center fd-justy-between">
+            <a href="#" class="fd-flex fd-align-center fd-justy-center">아이디 찾기</a>
+            <a href="#" class="fd-flex fd-align-center fd-justy-center">비밀번호 찾기</a>
+            <a href="#" class="fd-flex fd-align-center fd-justy-center">회원가입하기</a>
+        </div>
+    </section>
+    <!-- 로그인 오류 팝업 -->
+    <!--<div class="fd-popupContainer fd-flex fd-align-center fd-justy-center">
+        <div class="fd-popupBg"></div>
+        <div class="fd-popupBox login_error_popup fd-flex-col fd-align-center fd-justy-center">
+            <div class="fd-popupTitle">아이디(비밀번호)오류입니다</div>
+            <div class="fd-popupContent">
+                현재 입력하신 아이디가 등록되어 있지 않거나,
+                <br/> 아이디 또는 비밀번호를 잘못 입력 하셨습니다.
+                <br/> 비밀번호를 입력시 대소문자를 다르게 인식하고 있으니
+                <br/> 구별하여 입력해 주세요.
+                <br/>
+            </div>
+            <div class="fd-popupBtn fd-flex fd-align-center fd-justy-center">확&nbsp;&nbsp;인</div>
+        </div>
+    </div>-->
+
+    <!-- 가입권유 팝업 -->
+    <!--<div class="fd-popupContainer fd-flex fd-align-center fd-justy-center">
+        <div class="fd-popupBg"></div>
+        <div class="fd-popupBox login_ask_popup fd-flex-col fd-align-center fd-justy-center">
+            <div class="fd-askPopupTitle">
+                셀럽계정으로 가입하기
+            </div>
+            <div class="fd-askPopupSubTitle">셀럽 계정 가입은 문의 해주세요!</div>
+            <div class="fd-askPopupPhone">02-6101-7858</div>
+            <div class="fd-askPopupEmail">cs@fanndle.com</div>
+            <div class="fd-popupLine"></div>
+            <div class="fd-popupSnsBox fd-flex fd-justy-around">
+                <a href="#" class="fd-flex fd-justy-center fd-align-center mainBg">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" class="fd-flex fd-justy-center fd-align-center mainBg">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="fd-flex fd-justy-center fd-align-center mainBg">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="fd-flex fd-justy-center fd-align-center mainBg">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="fd-popupBtn fd-flex fd-align-center fd-justy-center">확&nbsp;&nbsp;인</div>
+        </div>
+    </div>-->
+    <!-- 가입유형 선택 -->
+    <!--<div class="fd-popupContainer fd-flex fd-align-center fd-justy-center">
+        <div class="fd-popupBg"></div>
+        <div class="fd-popupBox add_account_type fd-flex-col fd-align-center fd-justy-center">
+            <div class="fd-popupTitle">회원가입 유형 선택</div>
+            <div class="fd-popupContent">
+                회원가입 유형에 따라 가입절차는 다르게 진행됩니다.
+                <br/> 회원가입 유형을 선택해 주세요
+            </div>
+            <div class="fd-popupAccountTypeBox fd-flex fd-align-center fd-justy-center">
+                <a href="#" class="fd-popupAccountType fd-flex-col fd-align-center fd-justy-start">
+                    <img src="/img/personal_account.png" alt="personal icon" class="personal_icon">
+                    <div class="fd-popupAccountTypeTitle">개인계정</div>
+                </a>
+                <div class="fd-popupAccountLine"></div>
+                <a href="#" class="fd-popupAccountType fd-flex-col fd-align-center fd-justy-start">
+                    <img src="/img/company.png" alt="personal icon" class="company_icon">
+                    <div class="fd-popupAccountTypeTitle">셀럽계정</div>
+                    <div class="fd-popupAccountTypeSubTitle">셀럽 및 연예기획사</div>
+                </a>
+
+
+            </div>
+            <div class="fd-popupBtn fd-flex fd-align-center fd-justy-center">취&nbsp;&nbsp;소</div>
+        </div>
+    </div>-->
+</body>
+
+</html>

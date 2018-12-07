@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FANDDLE</title>
+    <link rel="stylesheet" href="/common/common.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id="fd-container" class="celupSection">
+        <div class="fd-basketHeader fd-flex fd-align-center fd-justy-between">
+            <a class="fd-smHeadBack" href="#"></a>
+            <div class="fd-smHeadeTitle">장바구니</div>
+            <a class="fd-smHeadMarket" href="#"></a>
+        </div>
+        <form action="" class="fd-basketContainer">
+            <div class="fd-basketSelecAll">
+                <label class="fd-basketSelecAllLabel ">
+                    <input type="checkbox" id="" value="" aria-label="..." class="">
+                    <i class="check-icon"></i>
+                    <span class="fd-basketChkAllText">전체선택하기</span>
+                </label>
+            </div>
+            <ul class="fd-basketList">
+                <li class="fd-basket fd-flex">
+                    <div class="fd-basketLeft fd-flex fd-align-center fd-justy-center">
+                        <label class="fd-basketSelec">
+                            <input type="checkbox" id="" value="" aria-label="..." class="">
+                            <i class="check-icon"></i>
+                        </label>
+                        <!-- <div class="fd-hexagonBox">
+                            <div class="fd-basketProImgBox hexagon">
+                            </div>
+                            <img src="/img/f1.png" alt="product img" class="fd-basketProImg">
+                        </div> -->
+                        <div class="fd-basketProductImg">
+                            <img src="/img/f1.png" alt="product img">
+                        </div>
+                    </div>
+                    <div class="fd-basketRight">
+                        <div class="fd-basketRightTitle fd-flex fd-justy-between fd-align-end">
+                            <div class="fd-basketProTitleBox">
+                                <div class="fd-basketProTitle">Gift Box</div>
+                                <div class="fd-basketProSubTitle">Light A</div>
+                            </div>
+                            <a href="#" class="fd-basketProMore">서비스 자세히 보기 ></a>
+                        </div>
+                        <ul class="fd-basketRightContentBox">
+                            <li class="fd-basketRightContent">컵샐러드(리코타치즈 or 닭가슴살 아보카도)</li>
+                            <li class="fd-basketRightContent">라이브롤(1줄)/카카오닙스차</li>
+                            <li class="fd-basketRightContent">디저트 리코타 치즈</li>
+                            <li class="fd-basketNoticeRed">*소스 및 기타 특이사항은 문의 해주세요</li>
+                        </ul>
+                        <div class="fd-basketRightPriceBox fd-flex fd-align-center fd-justy-between">
+                            <div class="fd-basketCount fd-flex fd-align-center fd-justy-center;">
+                                <div class="fd-basketMinus fd-flex fd-align-center fd-justy-center">-</div>
+                                <span class="fd-basketNum fd-flex fd-align-center fd-justy-center">1</span>
+                                <div class="fd-basketPlus fd-flex fd-align-center fd-justy-center">+</div>
+                            </div>
+                            <div class="fd-basketPrice">14,900</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="fd-basketFullBox">
+                <div class="fd-baksetFullPrice fd-flex fd-justy-between">
+                    <span class="fd-fullPriceText">
+                        판매가
+                    </span>
+                    <span class="fd-fullPriceNum">
+                        829,700원
+                    </span>
+                </div>
+                <div class="fd-basketFullDiscount fd-flex fd-justy-between">
+                    <span class="fd-fullPriceText">
+                        할인 판매가
+                    </span>
+                    <span class="fd-fullPriceNum fd-flex fd-align-center">
+                        <sub class="fd-discountNum">-30%</sub>
+                        60,000원
+                    </span>
+                </div>
+
+                <div class="fd-basketFullService fd-flex fd-justy-between">
+                    <span class="fd-fullPriceText">
+                        서비스 진행 비용
+                    </span>
+                    <span class="fd-fullPriceNum">
+                        20,000원
+                    </span>
+                </div>
+                <div class="fd-basketFullCount fd-flex fd-justy-between">
+                    <span class="fd-fullPriceText">
+                        수량
+                    </span>
+                    <span class="fd-fullPriceNum">
+                        32개
+                    </span>
+                </div>
+                <div class="fd-basketFullTotalprice fd-flex fd-justy-between">
+                    <span class="fd-fullPriceText">
+                        총금액
+                    </span>
+                    <span class="fd-fullPriceNum">
+                        809,700원
+                    </span>
+                </div>
+            </div>
+            <div class="fd-basketSendBox fd-flex fd-align-center fd-justy-between">
+                <div class="fd-basketCancle fd-flex fd-align-center fd-justy-center">취소하기</div>
+                <button class="fd-basketBuy activedButton">결제하기</button>
+            </div>
+        </form>
+
+
+
+    </section>
+
+    <!-- 서비스 신청하기 팝업 -->
+    <div class="fd-popupContainer fd-flex-col fd-align-center fd-justy-center">
+        <div class="fd-popupBg"></div>
+        <div class="fd-popupBox service_popup">
+            <div class="fd-serviePopupTitle">서비스 신청하기</div>
+            <div class="fd-servicePopupAddInput fd-flex fd-justy-between">
+                <input type="text" placeholder="주소찾기를 클릭해 주세요" readonly>
+                <div class="fd-findAddress fd-flex fd-align-center fd-justy-center">주소찾기</div>
+            </div>
+            <div class="fd-serviePopupInput">
+                <input type="text" placeholder="상세주소 적기">
+            </div>
+            <div class="fd-serviePopupInput fd-flex">
+                <input id="dateInput" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="배달 받을 날짜 정하기(yy.mm.dd)">
+                <div class="dateIcon fd-flex fd-align-center">
+                    <img src="/img/date_icon.png" alt="date_icon">
+                </div>
+            </div>
+            <ul class="fd-serviceProductList">
+                <li class="fd-serviceProduct fd-flex fd-align-center">
+                    <div class="fd-servieProductImg">
+                        <img src="/img/sto1.png" alt="proudct img">
+                    </div>
+                    <div class="fd-servieProductTitleBox">
+                        <div class="fd-servieProductTitle">Gift Box</div>
+                        <div class="fd-serviceProductSubTitle">Light A</div>
+                    </div>
+                    <div class="fd-serviceProudctPriceBox">
+                        14,900
+                    </div>
+                    <div class="fd-serviceProductNum">x20</div>
+                </li>
+                
+            </ul>
+            <div class="fd-serviePopupInput">
+                <input type="text" placeholder="도시락 서비스 신청서 제목">
+            </div>
+            <div class="fd-serviePopupInput">
+                <input type="tel" placeholder="참가 인원">
+            </div>
+            <div class="fd-serviePopupInput">
+                <textarea type="text" placeholder="(300자 이내 서비스 요청에 설명을 적어주세요)" id="explainInput" r></textarea>
+            </div>
+        </div>
+        <div class="fd-serviceBtn fd-flex fd-align-center fd-justy-center">결제하기</div>
+    </div>
+    <script src="/common/fullHeight.js"></script>
+    <script>
+        window.onload = function () {
+            var full = new FullHeight('fd-container');
+        }
+    </script>
+</body>
+
+</html>

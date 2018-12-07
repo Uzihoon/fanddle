@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FANDDLE</title>
+    <link rel="stylesheet" href="/common/common.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id="fd-container" class="bgFFF celupSection">
+        <!-- language setting -->
+        <a href="#" class="fd-langBoxDefault"></a>
+        <div class="fd-foodDetailImgBox">
+            <div class="fd-foodDetailImgBg"></div>
+            <ul class="fd-foodDetailImgList" id="foodSlideList">
+                <li class="fd-foodDetailImg">
+                    <img src="/img/f1.png" alt="food detail img">
+                </li>
+                <li class="fd-foodDetailImg">
+                    <img src="/img/f1.png" alt="food detail img">
+                </li>
+                <li class="fd-foodDetailImg">
+                    <img src="/img/f1.png" alt="food detail img">
+                </li>
+            </ul>
+            <!-- slide direction button -->
+            <div class="fd-foodSlideDirectionBox ">
+                <div class="fd-foodSlidePrev"></div>
+                <div class="fd-foodSlideNext"></div>
+            </div>
+            <!-- slide Navigation -->
+            <div class="fd-foodSlideNaviBox" id="foodNavi">
+                <!-- <span class="fd-foodSlideNavi"></span> -->
+            </div>
+        </div>
+        <div class="fd-foodDetailProBox">
+            <ul class="fd-foodDetailProList">
+                <li class="fd-foodDetailPro fd-flex">
+                    <div class="fd-foodDetailProLeft fd-flex">
+                        <div class="fd-foodProLeftTitleBox">
+                            <div class="fd-foodProTitle">Gift Box</div>
+                            <div class="fd-foodProSubTitle">Light A</div>
+                        </div>
+                        <div class="fd-foodProLeftContentBox">
+                            <div class="fd-foodProLeftContent">컵샐러드(리코타치즈 or 닭가슴살 아보카도)</div>
+                            <div class="fd-foodProLeftContent">라이브롤(2줄)/카카오닙스차</div>
+                            <div class="fd-foodProLeftContent">디저트 리코타 치즈 </div>
+                        </div>
+                    </div>
+                    <div class="fd-foodDetailProRight fd-flex fd-align-center fd-justy-center">
+                        <div class="fd-foodDetailProPrice">14,900</div>
+                    </div>
+                </li>
+                <li class="fd-foodDetailPro fd-flex">
+                    <div class="fd-foodDetailProLeft fd-flex">
+                        <div class="fd-foodProLeftTitleBox">
+                            <div class="fd-foodProTitle">Gift Box</div>
+                            <div class="fd-foodProSubTitle">Light A</div>
+                        </div>
+                        <div class="fd-foodProLeftContentBox">
+                            <div class="fd-foodProLeftContent">컵샐러드(리코타치즈 or 닭가슴살 아보카도)</div>
+                            <div class="fd-foodProLeftContent">라이브롤(2줄)/카카오닙스차</div>
+                            <div class="fd-foodProLeftContent">디저트 리코타 치즈 </div>
+                        </div>
+                    </div>
+                    <div class="fd-foodDetailProRight fd-flex fd-align-center fd-justy-center">
+                        <div class="fd-foodDetailProPrice">14,900</div>
+                    </div>
+                </li>
+                <li class="fd-foodDetailPro fd-flex">
+                    <div class="fd-foodDetailProLeft fd-flex">
+                        <div class="fd-foodProLeftTitleBox">
+                            <div class="fd-foodProTitle">Gift Box</div>
+                            <div class="fd-foodProSubTitle">Light A</div>
+                        </div>
+                        <div class="fd-foodProLeftContentBox">
+                            <div class="fd-foodProLeftContent">컵샐러드(리코타치즈 or 닭가슴살 아보카도)</div>
+                            <div class="fd-foodProLeftContent">라이브롤(2줄)/카카오닙스차</div>
+                            <div class="fd-foodProLeftContent">디저트 리코타 치즈 </div>
+                            <div class="fd-foodProLeftContent">디저트 리코타 치즈 </div>
+                            <div class="fd-foodProLeftContent">디저트 리코타 치즈 </div>
+                            <div class="fd-foodProLeftContent">디저트 리코타 치즈 </div>
+                        </div>
+                    </div>
+                    <div class="fd-foodDetailProRight fd-flex fd-align-center fd-justy-center">
+                        <div class="fd-foodDetailProPrice">14,900</div>
+                    </div>
+                </li>
+                <li class="fd-foodDetailPro fd-flex">
+                    <div class="fd-foodDetailProLeft fd-flex">
+                        <div class="fd-foodProLeftTitleBox">
+                            <div class="fd-foodProTitle">Gift Box</div>
+                            <div class="fd-foodProSubTitle">Light A</div>
+                        </div>
+                        <div class="fd-foodProLeftContentBox">
+                            <div class="fd-foodProLeftContent">컵샐러드(리코타치즈 or 닭가슴살 아보카도)</div>
+                            <div class="fd-foodProLeftContent">라이브롤(2줄)/카카오닙스차</div>
+                            <div class="fd-foodProLeftContent">디저트 리코타 치즈 </div>
+                        </div>
+                    </div>
+                    <div class="fd-foodDetailProRight fd-flex fd-align-center fd-justy-center">
+                        <div class="fd-foodDetailProPrice">14,900</div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <!-- 결제 수량 입력 하단 창 -->
+        <div class="fd-checkChargeBox fd-flex fd-justy-between">
+            <div class="fd-checkChargeCount fd-flex">
+                <div class="fd-checkChargeBtn fd-flex fd-align-center fd-justy-center">-</div>
+                <div class="fd-checkChargeNum fd-flex fd-align-center fd-justy-center">1</div>
+                <div class="fd-checkChargeBtn fd-flex fd-align-center fd-justy-center">+</div>
+            </div>
+            <div class="fd-checkChargePriceBox fd-flex fd-align-center">
+                <sub>총금액</sub>
+                <div class="fd-checkChargePrice">KRW
+                    <b>12,000</b>
+                </div>
+            </div>
+        </div>
+        <div class="fd-projectBtn fd-flex fd-align-center fd-justy-center gradient">
+            <a href="#" class="fd-goMarket fd-flex fd-align-center fd-justy-center">장바구니</a>
+            <a href="#" class="fd-creditNow fd-flex fd-align-center fd-justy-center">서비스 신청</a>
+        </div>
+
+    </section>
+    <script src="/common/clickSlide.js"></script>
+    <script>
+        window.onload = function () {
+            var clickSlide = new ClickSlide('foodSlideList', 'fd-foodDetailImg', 'fd-foodSlidePrev', 'fd-foodSlideNext', 'foodNavi', 'fd-foodSlideNavi')
+        }
+    </script>
+</body>
+
+</html>

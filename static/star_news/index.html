@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FANDDLE</title>
+    <link rel="stylesheet" href="/common/common.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id="fd-container" class="celupSection storeSection">
+        <div class="fd-storeHeader">
+            <div class="fd-backIcon">
+                <img src="/img/backB.png" alt="back icon">
+            </div>
+            <div class="fd-storeTitle">셀럽소식</div>
+            <!-- language setting -->
+            <a href="#" class="fd-langBox"></a>
+        </div>
+        <form class="fd-newsSearchBox fd-flex fd-align-center fd-justy-between">
+            <input type="text" class="fd-newsInput" placeholder="스타검색">
+            <button class="fd-newsSearch"></button>
+        </form>
+        <div class="fd-newsContainer">
+            <div class="fd-newsTitleBox fd-flex">
+                <div class="fd-newsTitle">콘서트</div>
+                <div class="fd-newsSubTitle">| 관심집중 핫 이슈 콘서트</div>
+            </div>
+            <ul class="fd-newsList fd-flex fd-justy-between">
+                <li class="fd-news"><img src="/img/c1.png" alt=""></li>
+                <li class="fd-news"><img src="/img/c1.png" alt=""></li>
+                <li class="fd-news"><img src="/img/c1.png" alt=""></li>
+            </ul>
+        </div>
+        <!-- footer menu -->
+        <div class="fd-footerMenuBox">
+            <a href="#" class="fd-footerMenu">
+                <img src="/img/menu1.png" alt="menu icon">
+            </a>
+            <a href="#" class="fd-footerMenu">
+                <img src="/img/menu2.png" alt="menu icon">
+            </a>
+            <a href="#" class="fd-footerMenu">
+                <img src="/img/menu3.png" alt="menu icon">
+            </a>
+            <a href="#" class="fd-footerMenu">
+                <img src="/img/menu4.png" alt="menu icon">
+            </a>
+        </div>
+    </section>
+    <script src="/common/fullHeight.js"></script>
+    <script>
+        window.onload = function () {
+            var full = new FullHeight('fd-container');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FANDDLE</title>
+    <link rel="stylesheet" href="/common/common.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id="fd-joinContainer">
+        <div class="fd-joinHeader">
+            <div class="fd-backIcon">
+                <img src="/img/backB.png" alt="back icon">
+            </div>
+            <div class="fd-storeTitle">회원가입하기</div>
+            <!-- language setting -->
+            <a href="#" class="fd-langBox"></a>
+        </div>
+
+
+        <form action="post" class="fd-joinForm">
+            <div class="fd-joinContentContainer fd-flex-col fd-align-center fd-justy-around">
+                <div class="fd-joinContentHead fd-flex fd-align-center fd-justy-center">
+                    <label class="fd-joinLabel fd-flex fd-align-center">
+                        <input type="radio" value="" name="join" aria-label="..." class="">
+                        <i class="check-icon"></i>
+                        이메일로 가입하기
+                    </label>
+                    <label class="fd-joinLabel fd-flex fd-align-center fd-justy-center">
+                        <input type="radio" name="join" value="" aria-label="..." class="">
+                        <i class="check-icon"></i>
+                        핸드폰 가입하기
+                    </label>
+                </div>
+                <!-- 핸드폰 가입 -->
+                <!--<div class="fd-joinWidthMobile fd-flex-col fd-align-center fd-justy-around">
+                    <div class="fd-joinMobileTerm fd-flex fd-align-center fd-justy-between">
+                        <div class="fd-joinMobileTermText fd-flex fd-align-center ">
+                            <span class="triangle"></span>휴대전화 본인인증 약관</div>
+                        <label class="fd-term-label fd-flex fd-align-center fd-justy-center">
+                            <input type="checkbox" value="" aria-label="..." class="">
+                            <i class="check-icon"></i>
+                            전체동의
+                        </label>
+                    </div>
+                    <div class="fd-joinInputNam">
+                        <input type="text" placeholder="성명">
+                    </div>
+                    <div class="fd-joinInputNum fd-felx">
+                        <input type="tel" class="fd-joinNumFirst" placeholder="주민번호 앞 7자리">
+                        <input type="tel" class="fd-joinNumLast">
+                        <span>*</span>
+                        <span>*</span>
+                        <span>*</span>
+                        <span>*</span>
+                    </div>
+                    <div class="fd-joinTelCom">
+                        <select name="" id="">
+                            <option value="">통신사 선택</option>
+                            <option value="">SKT</option>
+                            <option value="">KT</option>
+                            <option value="">LGU+</option>
+                        </select>
+                    </div>
+                    <div class="fd-joinTelNum fd-flex fd-justy-between">
+                        <input type="tel" placeholder="핸드폰번호">
+                        <div class="fd-joinTelCheck fd-flex fd-align-center fd-justy-center">인증번호 받기</div>
+                    </div>
+                    <div class="fd-joinTelNum fd-flex fd-justy-between">
+                        <input type="tel" placeholder="인증번호 입력하세요">
+                        <div class="fd-joinCheckMore fd-flex fd-align-center fd-justy-center">입력시간 연장
+                            <div class="time">02:00</div>
+                        </div>
+
+                    </div>-->
+                <!-- email 가입 -->
+                <div class="fd-joinWidthEmail fd-flex-col fd-align-center fd-justy-around">
+
+                    <div class="fd-joinInputNam">
+                        <input type="email" placeholder="본인 이메일 주소">
+                    </div>
+                    <div class="fd-joinInputNam">
+                        <input type="password" placeholder="비밀번호(영문/숫자/특문 조합 8-15자)">
+                    </div>
+                    <div class="fd-joinInputNam">
+                        <input type="password" placeholder="비밀번호를 다시 입력해 주세요">
+                    </div>
+                    <div class="fd-joinEmailTerm">
+                        <div class="fd-joinEmailTermAll">
+                            <label class="fd-emailTermLabel ">
+                                <input type="checkbox" value="" aria-label="..." class="">
+                                <i class="check-icon"></i>
+                                아래의 내용에 모두 동의 합니다.
+                            </label>
+                        </div>
+                        <div class="fd-joinEmailTermBox fd-flex fd-align-center fd-justy-between">
+                            <label class="fd-emailTermBoxLabel ">
+                                <input type="checkbox" value="" aria-label="..." class="">
+                                <i class="check-icon"></i>
+                                팬심 회원 약관
+                            </label>
+                            <a href="#" class="fd-mailMore">보기 ></a>
+                        </div>
+                        <div class="fd-joinEmailTermBox fd-flex fd-align-center fd-justy-between">
+                            <label class="fd-emailTermBoxLabel ">
+                                <input type="checkbox" value="" aria-label="..." class="">
+                                <i class="check-icon"></i>
+                                개인정보 수집 / 이용동의
+                            </label>
+                            <a href="#" class="fd-mailMore">보기 ></a>
+                        </div>
+                        <div class="fd-joinEmailTermBox fd-flex fd-align-center fd-justy-between">
+                            <label class="fd-emailTermBoxLabel ">
+                                <input type="checkbox" value="" aria-label="..." class="">
+                                <i class="check-icon"></i>
+                                서비스 약관
+                            </label>
+                            <a href="#" class="fd-mailMore">보기 ></a>
+                        </div>
+                        <div class="fd-joinEmailTermBox fd-flex fd-align-center fd-justy-between">
+                            <label class="fd-emailTermBoxLabel ">
+                                <input type="checkbox" value="" aria-label="..." class="">
+                                <i class="check-icon"></i>
+                                만 14세 이상임을 확인합니다
+                            </label>
+                            <a href="#" class="fd-mailMore">보기 ></a>
+                        </div>
+                        <div class="fd-joinEmailTermBox fd-flex fd-align-center fd-justy-between">
+                            <label class="fd-emailTermBoxLabel ">
+                                <input type="checkbox" value="" aria-label="..." class="">
+                                <i class="check-icon"></i>
+                                홍보상 정보 수신 동의(선택)
+                            </label>
+                            <a href="#" class="fd-mailMore">보기 ></a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="fd-joinSenBtn">
+                <button>회원가입하기</button>
+            </div>
+        </form>
+
+    </section>
+    <script src="/common/fullHeight.js"></script>
+    <script>
+        window.onload = function () {
+            var full = new FullHeight('fd-joinContainer');
+        }
+    </script>
+</body>
+
+</html>

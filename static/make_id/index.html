@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FANDDLE</title>
+    <link rel="stylesheet" href="/common/common.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id="fd-joinContainer">
+        <div class="fd-joinHeader">
+            <div class="fd-backIcon">
+                <img src="/img/backB.png" alt="back icon">
+            </div>
+            <div class="fd-storeTitle">회원가입하기</div>
+            <!-- language setting -->
+            <a href="#" class="fd-langBox"></a>
+        </div>
+
+
+        <form action="post" class="fd-joinForm">
+            <div class="fd-joinContentContainer fd-flex-col fd-align-center fd-justy-around">
+                <div class="fd-makeIdInput">
+                    <input type="text" placeholder="이름">
+                </div>
+                <div class="fd-makeIdInput">
+                    <input type="tel" placeholder="휴대전화">
+                </div>
+                <div class="fd-makeIdWrite fd-flex">
+                    <input type="text" placeholder="아이디">
+                    <div class="fd-makeIdCheck fd-flex fd-align-center fd-justy-center">중복확인</div>
+                    <div class="fd-makeIdNotice">
+                        * 입력하신 아이디는 이후 변경이 불가능합니다.
+                    </div>
+                </div>
+                <div class="fd-makeIdInput">
+                    <input type="password" placeholder="비밀번호(영문/특수문자/8~12자)">
+                </div>
+                <div class="fd-makeIdInput">
+                    <input type="password" placeholder="비밀번호 확인">
+                </div>
+                <div class="fd-makeIdAddress">
+                    <div class="fd-makeIdAddTitle">주소 입력하기</div>
+                    <div class="fd-makeIdInput">
+                        <input type="text" placeholder="이름">
+                    </div>
+                    <div class="fd-makeIdAddInput">
+                        <select name="" id="">
+                            <option value="">국적</option>
+                            <option value="">대한민국</option>
+                        </select>
+                        <span class="fd-makeIdAddNum">12345 </span>
+                    </div>
+                    <div class="fd-makeIdInput fd-addInput">
+                        <input type="text" placeholder="주소">
+                    </div>
+                </div>
+            </div>
+            <div class="fd-joinSenBtn">
+                <button>가입하기</button>
+            </div>
+        </form>
+
+    </section>
+    <script src="/common/fullHeight.js"></script>
+    <script>
+        window.onload = function () {
+            var full = new FullHeight('fd-joinContainer');
+        }
+    </script>
+</body>
+
+</html>

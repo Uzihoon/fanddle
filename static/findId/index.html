@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FANDDLE</title>
+    <link rel="stylesheet" href="/common/common.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id="fd-joinContainer">
+        <div class="fd-joinHeader">
+            <div class="fd-backIcon">
+                <img src="/img/backB.png" alt="back icon">
+            </div>
+            <div class="fd-storeTitle">아이디 찾기</div>
+            <!-- language setting -->
+            <a href="#" class="fd-langBox"></a>
+        </div>
+
+
+        <form action="post" class="fd-joinForm">
+            <div class="fd-joinContentContainer fd-flex-col fd-align-center fd-justy-around">
+                <div class="fd-joinContentHead fd-flex fd-align-center fd-justy-center">
+                    <label class="fd-joinLabel fd-flex fd-align-center">
+                        <input type="radio" value="" name="join" aria-label="..." class="">
+                        <i class="check-icon"></i>
+                        이메일로 가입하기
+                    </label>
+                    <label class="fd-joinLabel fd-flex fd-align-center fd-justy-center">
+                        <input type="radio" name="join" value="" aria-label="..." class="">
+                        <i class="check-icon"></i>
+                        핸드폰 가입하기
+                    </label>
+                </div>
+                <!-- 핸드폰 가입 -->
+                <div class="fd-findId fd-flex-col fd-align-center fd-justy-around">
+
+                        <div class="fd-joinInputNam">
+                            <input type="tel" placeholder="핸드폰 번호">
+                        </div>
+                        <div class="fd-joinInputNam fd-flex fd-align-center fd-justy-between">
+                            <input type="email" placeholder="핸드폰 번호" class="fd-findIdPhone">
+                            <div class="fd-findIdPhoneBtn fd-flex fd-align-center fd-justy-center">인증번호 받기</div>
+                        </div>
+                        
+                        
+                    </div>
+                <!-- email 가입 -->
+                <!-- <div class="fd-findId fd-flex-col fd-align-center fd-justy-around">
+
+                    <div class="fd-joinInputNam">
+                        <input type="email" placeholder="성명">
+                    </div>
+                    <div class="fd-joinInputNam">
+                        <input type="email" placeholder="생년월일(YY/MM/DD)">
+                    </div>
+                    <div class="fd-joinInputNam">
+                        <input type="email" placeholder="입력한 이메일 주소로 임시 비밀번호 바꾸기">
+                    </div>
+                    <div class="fd-findIdSend">
+                        <span class="fd-findIdSendBtn fd-flex fd-align-center fd-justy-center">이메일 보내기</span>
+                    </div>
+
+                </div> -->
+
+            </div>
+            <div class="fd-findIdBtn">
+                <button>로그인 다시하기</button>
+            </div>
+        </form>
+
+    </section>
+    <script src="/common/fullHeight.js"></script>
+    <script>
+        window.onload = function () {
+            var full = new FullHeight('fd-joinContainer');
+        }
+    </script>
+</body>
+
+</html>

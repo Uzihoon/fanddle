@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FANDDLE</title>
+    <link rel="stylesheet" href="/common/common.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <section id="fd-container">
+        <div class="fd-header">
+            <div class="fd-logo">
+                <img src="/img/logo.png" alt="logo">
+            </div>
+            <!-- language setting -->
+            <a href="#" class="fd-langBox"></a>
+        </div>
+        <!-- content start -->
+        <div class="fd-Content">
+            <div class="fd-mainSlideBox">
+                <ul class="fd-mainSlideList" id="slideBox">
+                    <li class="fd-mainSlide">
+                        <img src="/img/s1.png" alt="slide img">
+                    </li>
+                    <li class="fd-mainSlide">
+                        <img src="/img/s1.png" alt="slide img">
+                    </li>
+                    <li class="fd-mainSlide">
+                        <img src="/img/s1.png" alt="slide img">
+                    </li>
+                    <li class="fd-mainSlide">
+                        <img src="/img/s1.png" alt="slide img">
+                    </li>
+                </ul>
+                <!-- slide navigation -->
+                <div class="fd-slidePagi" id="navi">
+                    <!-- <span class="fd-pagi actived"></span>
+                    <span class="fd-pagi"></span>
+                    <span class="fd-pagi"></span>
+                    <span class="fd-pagi"></span> -->
+                </div>
+            </div>
+            <ul class="fd-menuList">
+                <li class="fd-menu">
+                    <a href="#" class="fd-menuLink menu1">
+                        <div class="fd-menuText">서비스</div>
+                    </a>
+                </li>
+                <li class="fd-menu">
+                    <a href="#" class="fd-menuLink menu2">
+                        <div class="fd-menuText">프로젝트</div>
+                    </a>
+                </li>
+                <li class="fd-menu">
+                    <a href="#" class="fd-menuLink menu3">
+                        <div class="fd-menuText">셀럽소식</div>
+                    </a>
+                </li>
+                <li class="fd-menu">
+                    <a href="#" class="fd-menuLink menu4">
+                        <div class="fd-menuText">펀들스토어</div>
+                    </a>
+                </li>
+                <li class="fd-menu">
+                    <a href="#" class="fd-menuLink menu5">
+                        <div class="fd-menuText">팬들채널</div>
+                    </a>
+                </li>
+                <li class="fd-menu">
+                    <a href="#" class="fd-menuLink menu6 defaultMenu">
+                        <div class="fd-menuText"></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <a class="fd-adBox" href="#">
+            <img src="/img/ad1.png" alt="광고 이미지">
+        </a>
+        <div class="fd-adContainer">
+            <a href="#" class="fd-bigAd">
+                <img src="big1.png" alt="AD">
+            </a>
+            <a href="#" class="fd-bigAd">
+                <img src="big2.png" alt="AD">
+            </a>
+        </div>
+        <div class="fd-footerBox">
+            <div class="fd-footerTitle">
+                <div class="fd-footerLogo">
+                    <img src="/img/logo.png" alt="logo img">
+                </div>
+                <div class="fd-footerText">사업자 정보
+                    <img class="footerImg" src="/img/footer.png" alt="footer direction">
+                </div>
+            </div>
+            <div class="fd-footerLinkBox">
+                <a href="#" class="fd-footerLink">이용약관</a>
+                <span class="fd-footerLine"></span>
+                <a href="#" class="fd-footerLink">개인정보 처리방침</a>
+                <span class="fd-footerLine"></span>
+                <a href="#" class="fd-footerLink">사업자 정보 확인</a>
+            </div>
+            <div class="fd-footerContent">
+                <p>
+                    (주)팬들은 통신판매 중계자로서 통신판매의 당사자가 아니며,
+                    <br/>상품의 예약, 이용 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다.
+                </p>
+            </div>
+            <div class="fd-footerSNSBox">
+                <a href="#" class="fd-footerSNS">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="fd-footerSNS">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="fd-footerSNS">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- footer menu -->
+        <div class="fd-footerMenuBox">
+            <a href="#" class="fd-footerMenu">
+                <img src="/img/menu1.png" alt="menu icon">
+            </a>
+            <a href="#" class="fd-footerMenu">
+                <img src="/img/menu2.png" alt="menu icon">
+            </a>
+            <a href="#" class="fd-footerMenu">
+                <img src="/img/menu3.png" alt="menu icon">
+            </a>
+            <a href="#" class="fd-footerMenu">
+                <img src="/img/menu4.png" alt="menu icon">
+            </a>
+        </div>
+
+        <!-- 안내 팝업 -->
+        <div class="fd-popupContainer fd-flex fd-align-center fd-justy-center">
+            <div class="fd-popupBg"></div>
+            <div class="fd-popupBox login_ask_popup fd-flex-col fd-align-center fd-justy-center">
+
+                <div class="fd-askPopupSubTitle">응원하는 누군가에게 힘이 된다면!
+                    <br/> 무엇이든 언제나 물어보세요</div>
+                <div class="fd-askPopupPhone">02-6101-7858</div>
+                <div class="fd-askPopupEmail">cs@fanndle.com</div>
+                <div class="fd-popupLine"></div>
+                <div class="fd-popupSnsBox fd-flex fd-justy-around">
+                    <a href="#" class="fd-flex fd-justy-center fd-align-center mainBg">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="fd-flex fd-justy-center fd-align-center mainBg">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="fd-flex fd-justy-center fd-align-center mainBg">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="fd-flex fd-justy-center fd-align-center mainBg">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="fd-popupBtn fd-flex fd-align-center fd-justy-center">확&nbsp;&nbsp;인</div>
+            </div>
+        </div>
+    </section>
+    <script src="common//slide.js"></script>
+    <script>
+        window.onload = function () {
+            var slide = new FanddleSlide('slideBox', 'fd-mainSlide', 'navi', 'fd-pagi')
+        }
+    </script>
+</body>
+
+</html>

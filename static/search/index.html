@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FANDDLE</title>
+    <link rel="stylesheet" href="/common/common.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id="fd-container" class="celupSection storeSection">
+        <div class="fd-searchFixed">
+            <div class="fd-storeHeader">
+                <!-- <div class="fd-backIcon">
+                            <img src="/img/backB.png" alt="back icon">
+                        </div> -->
+                <div class="fd-storeTitle">셀럽페이지</div>
+                <!-- language setting -->
+                <a href="#" class="fd-langBox"></a>
+            </div>
+            <form class="fd-newsSearchBox fd-flex fd-align-center fd-justy-between">
+                <input type="text" class="fd-newsInput" placeholder="스타검색">
+                <button class="fd-newsSearch"></button>
+            </form>
+            <div class="fd-searchContainer">
+                <div class="fd-searchFixContainer">
+                    <div class="fd-searchFixTitle">셀럽스테이지 즐겨찾기</div>
+                    <div class="fd-searchFavStarContainer">
+                        <ul class="fd-searchFixStar fd-flex">
+                            <li class="fd-searchFavoriteStar">
+                                <div class="fd-searchFavImg">
+                                    <div class="fd-favoriteImg">
+                                        <img src="/img/c1.png" alt="star img">
+                                    </div>
+                                    <div class="fd-searchStar">
+                                        <img src="/img/star_icon.png" alt="star icon" id="list_starIcon">
+                                    </div>
+                                </div>
+                                <div class="fd-searchFavTitleBox">
+                                    <div class="fd-seachFavName">김지석</div>
+                                    <div class="fd-searchFavJob">배우</div>
+                                </div>
+                            </li>
+
+                            <li class="fd-addFavoStar">
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <ul class="fd-searchStarListBox">
+            <li class="fd-searchStarList fd-flex fd-justy-between">
+                <div class="fd-searchStarListImg fd-flex fd-align-center">
+                    <div class="fd-searchFavImg">
+                        <div class="fd-favoriteImg">
+                            <img src="/img/c1.png" alt="star img">
+                        </div>
+                    </div>
+                </div>
+                <div class="fd-sarchStarListContent fd-flex-col fd-justy-center">
+                    <div class="fd-sarchStarListName">김지석<b>탤런트, 배우</b></div>
+                    <div class="fd-searchStarListCom">제이스타즈엔터테이먼트</div>
+                    <div class="fd-searchStarListLikeBox fd-flex fd-align-center"><img src="/img/starB.png" alt="star"><span>4.2K</span><span>좋아요</span></div>
+                </div>
+                <div class="fd-sarchStarListMore"><a href="#" class="fd-flex fd-align-center fd-justy-center"><img src="/img/menu4.png" alt="more icon"></a></div>
+            </li>
+        </ul>
+
+        <!-- footer menu -->
+        <div class="fd-footerMenuBox">
+            <a href="#" class="fd-footerMenu">
+                <img src="/img/menu1.png" alt="menu icon">
+            </a>
+            <a href="#" class="fd-footerMenu">
+                <img src="/img/menu2.png" alt="menu icon">
+            </a>
+            <a href="#" class="fd-footerMenu">
+                <img src="/img/menu3.png" alt="menu icon">
+            </a>
+            <a href="#" class="fd-footerMenu">
+                <img src="/img/menu4.png" alt="menu icon">
+            </a>
+        </div>
+    </section>
+    <script src="/common/fullHeight.js"></script>
+    <script>
+        window.onload = function () {
+            var full = new FullHeight('fd-container');
+            full.fullWidth('fd-searchFixStar', 'fd-searchFavoriteStar');
+        }
+    </script>
+</body>
+
+</html>

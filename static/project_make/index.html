@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FANDDLE</title>
+    <link rel="stylesheet" href="/common/common.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id="fd-joinContainer fd-proMakeContainer">
+        <div class="fd-proMakeHead">
+            <div class="fd-joinHeader">
+                <div class="fd-backIcon">
+                    <img src="/img/backB.png" alt="back icon">
+                </div>
+                <div class="fd-storeTitle">프로젝트 신청하기</div>
+                <!-- language setting -->
+                <a href="#" class="fd-langBox"></a>
+            </div>
+        </div>
+        <form class="fd-proMakeBox">
+            <input type="text" class="proMakeInput" placeholder="신청인 이름">
+            <input type="text" class="proMakeInput" placeholder="소속">
+            <input type="text" class="proMakeInput" placeholder="셀럽이름">
+            <input type="tel" class="proMakeInput" placeholder="연락처">
+            <input type="email" class="proMakeInput" placeholder="이메일주소">
+            <input type="text" class="proMakeInput" placeholder="남기고 싶은 메세지">
+            <div class="proMakeTitl">상세내용</div>
+            <textarea name="" class="proMakeText" placeholder="예 ) 아이유 000드라마 첫 촬영장에 보낼
+       밥차 프로젝트를 신청합니다 "></textarea>
+
+            <label class=" fd-flex fd-makeProLabel">
+                <input type="radio" value="" name="join" aria-label="..." class="">
+                <i class="check-icon"></i>
+                프로젝트로 모금 된 금액은 특별한 사유 없이
+                <br/> 신청인에게 반환되지 않습니다.
+                <br/> 팬들 내 서비스로 프로젝트가 진행됩니다.
+                <br/>
+            </label>
+            <div class="fd-makeProBtn">
+                <button class="gradient">프로젝트 신청하기</button>
+            </div>
+        </form>
+        <!-- footer menu -->
+        <div class="fd-footerMenuBox">
+            <a href="#" class="fd-footerMenu">
+                <img src="/img/menu1.png" alt="menu icon">
+            </a>
+            <a href="#" class="fd-footerMenu">
+                <img src="/img/menu2.png" alt="menu icon">
+            </a>
+            <a href="#" class="fd-footerMenu">
+                <img src="/img/menu3.png" alt="menu icon">
+            </a>
+            <a href="#" class="fd-footerMenu">
+                <img src="/img/menu4.png" alt="menu icon">
+            </a>
+        </div>
+
+    </section>
+    <script src="/common/fullHeight.js"></script>
+    <script>
+        window.onload = function () {
+            // var full = new FullHeight('fd-joinContainer');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FANDDLE</title>
+    <link rel="stylesheet" href="/common/common.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id="fd-container" class="celupSection">
+        <div class="fd-basketHeader fd-flex fd-align-center fd-justy-between">
+            <a class="fd-smHeadBack" href="#"></a>
+            <div class="fd-smHeadeTitle">장바구니</div>
+            <a class="fd-smHeadMarket" href="#"></a>
+        </div>
+        <form action="" class="fd-basketContainer">
+            <div class="fd-basketSelecAll">
+                <label class="fd-basketSelecAllLabel ">
+                    <input type="checkbox" id="" value="" aria-label="..." class="">
+                    <i class="check-icon"></i>
+                    <span class="fd-basketChkAllText">전체선택하기</span>
+                </label>
+            </div>
+            <!--빈 장바구니 화면-->
+            <div class="fd-emptyBasketContainer fd-flex-col fd-align-center fd-justy-center">
+                <div class="fd-emptyTitle">장바구니에 들어있는것이 없네요.</div>
+                <div class="fd-emptySub">
+                    <a href="#">기프티콘샵</a> 이나 <a href="#">스토어</a>에서
+                </div>
+                <div class="fd-emptySub">
+                    상품을 구매 해보시겠어요?
+                </div>
+            </div>
+            <div class="fd-basketFullBox">
+                <div class="fd-baksetFullPrice fd-flex fd-justy-between">
+                    <span class="fd-fullPriceText">
+                        판매가
+                    </span>
+                    <span class="fd-fullPriceNum">
+                        829,700원
+                    </span>
+                </div>
+                <div class="fd-basketFullDiscount fd-flex fd-justy-between">
+                    <span class="fd-fullPriceText">
+                        할인 판매가
+                    </span>
+                    <span class="fd-fullPriceNum fd-flex fd-align-center">
+                        <sub class="fd-discountNum">-30%</sub>
+                        60,000원
+                    </span>
+                </div>
+
+                <div class="fd-basketFullService fd-flex fd-justy-between">
+                    <span class="fd-fullPriceText">
+                        서비스 진행 비용
+                    </span>
+                    <span class="fd-fullPriceNum">
+                        20,000원
+                    </span>
+                </div>
+                <div class="fd-basketFullCount fd-flex fd-justy-between">
+                    <span class="fd-fullPriceText">
+                        수량
+                    </span>
+                    <span class="fd-fullPriceNum">
+                        32개
+                    </span>
+                </div>
+                <div class="fd-basketFullTotalprice fd-flex fd-justy-between">
+                    <span class="fd-fullPriceText">
+                        총금액
+                    </span>
+                    <span class="fd-fullPriceNum">
+                        809,700원
+                    </span>
+                </div>
+            </div>
+            <div class="fd-basketSendBox fd-flex fd-align-center fd-justy-between">
+                <div class="fd-basketCancle fd-flex fd-align-center fd-justy-center">취소하기</div>
+                <button class="fd-basketBuy ">결제하기</button>
+            </div>
+        </form>
+
+
+
+    </section>
+    <script src="/common/fullHeight.js"></script>
+    <script>
+        window.onload = function () {
+            var full = new FullHeight('fd-container');
+        }
+    </script>
+</body>
+
+</html>

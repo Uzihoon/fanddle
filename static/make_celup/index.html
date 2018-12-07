@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>FANDDLE</title>
+    <link rel="stylesheet" href="/common/common.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <form id="fd-container" class="bgFFF celupSection">
+        <div class="fd-smHeader fd-celupHeader fd-flex fd-align-center fd-justy-between">
+            <a class="fd-smHeadBack" href="#"></a>
+            <div class="fd-smHeadeTitle">셀럽페이지 개설하기</div>
+            <a class="fd-smHeadMarket" href="#"></a>
+        </div>
+        <div class="fd-makeCelupUpload fd-flex-col fd-align-center fd-justy-center">
+            <div class="fd-makeUploadImg"></div>
+            <div class="fd-makeUploadTitle">등록하실 셀럽의 사진을
+                <br/>올려주세요</div>
+            <label for="file" class="fd-uploadLabel">
+                <input id="file" type="file" accept="image/*" class="fd-upload">
+            </label>
+        </div>
+        <div class="fd-makeCelupContainer">
+            <div class="fd-makeCelupNameInput">
+                <input type="text" placeholder="셀럽 이름">
+            </div>
+            <div class="fd-makeCelupFieldBox">
+                <div class="fd-makeFieldTitle">활동분야</div>
+                <div class="fd-makeFieldContainer fd-flex fd-align-center fd-justy-between">
+                    <label class="fd-makeFieldLabel">
+                        <input type="checkbox" name="field">
+                        <div class="fd-makeField fd-flex fd-align-center fd-justy-center">
+                            배우
+                        </div>
+                    </label>
+                    <label class="fd-makeFieldLabel">
+                        <input type="checkbox" name="field">
+                        <div class="fd-makeField fd-flex fd-align-center fd-justy-center">
+                            가수
+                        </div>
+                    </label>
+                    <label class="fd-makeFieldLabel">
+                        <input type="checkbox" name="field">
+                        <div class="fd-makeField fd-flex fd-align-center fd-justy-center">
+                            뮤지컬배우
+                        </div>
+                    </label>
+                    <label class="fd-makeFieldLabel">
+                        <input type="checkbox" name="field">
+                        <div class="fd-makeField fd-flex fd-align-center fd-justy-center">
+                            DJ
+                        </div>
+                    </label>
+                    <label class="fd-makeFieldLabel">
+                        <input type="checkbox" name="field">
+                        <div class="fd-makeField fd-flex fd-align-center fd-justy-center">
+                            연주자
+                        </div>
+                    </label>
+                    <label class="fd-makeFieldLabel">
+                        <input type="checkbox" name="field">
+                        <div class="fd-makeField fd-flex fd-align-center fd-justy-center">
+                            운동선수
+                        </div>
+                    </label>
+                    <label class="fd-makeFieldLabel">
+                        <input type="checkbox" name="field">
+                        <div class="fd-makeField fd-flex fd-align-center fd-justy-center">
+                            개그맨
+                        </div>
+                    </label>
+                    <label class="fd-makeFieldLabel">
+                        <input type="checkbox" name="field">
+                        <div class="fd-makeField fd-flex fd-align-center fd-justy-center">
+                            기타
+                        </div>
+                    </label>
+                </div>
+                <div class="fd-makeStarInfoBox">
+                    <input type="text" placeholder="소속사 이름">
+                    <input type="tel" placeholder="셀럽 생년월일">
+                </div>
+            </div>
+            <div class="fd-makeStarBtnBox">
+                <button class="fd-makeStarBtn">셀럽페이지 개설하기</button>
+            </div>
+        </div>
+    </form>
+    <!-- 개설완료 팝업 -->
+    <div class="fd-popupContainer fd-flex fd-align-center fd-justy-center">
+        <div class="fd-popupBg"></div>
+        <div class="fd-popupBox make_celup_finish fd-flex-col fd-align-center fd-justy-center">
+            <div class="fd-makePopupIcon"><img src="/img/make_popup_icon.png" alt="popup icon"></div>
+            <div class="fd-makePopupTitle">
+                <b>셀럽페이지 개설 신청</b>이<br/>
+                <b>완료</b> 되었습니다.
+            </div>
+            <div class="fd-makePopupContent">
+                검토후 페이지 생성 예정입니다.<br/>
+                조그만 기다려주세요
+            </div>
+            <div class="fd-makePopupBtn gradient fd-flex fd-align-center fd-justy-center">확&nbsp;&nbsp;&nbsp;&nbsp;인</div>
+        </div>
+    </div>
+    <script src="/common/upload.js"></script>
+    <script>
+        window.onload = function () {
+        }
+    </script>
+</body>
+
+</html>

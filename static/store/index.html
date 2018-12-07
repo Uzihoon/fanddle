@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FANDDLE</title>
+    <link rel="stylesheet" href="/common/common.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id="fd-container" class="celupSection storeSection">
+        <div class="fd-storeHeader">
+            <div class="fd-backIcon">
+                <img src="/img/backB.png" alt="back icon">
+            </div>
+            <div class="fd-storeTitle">팬들스토어</div>
+            <!-- language setting -->
+            <a href="#" class="fd-langBox"></a>
+        </div>
+        <div class="fd-stroeImgBox">
+            <img src="/img/store.png" alt="store img">
+        </div>
+        <ul class="fd-storeProList fd-flex fd-align-center fd-justy-between">
+            <li class="fd-storeProduct">
+                <a href="#" class="fd-storeProductLink">
+                    <div class="fd-storeProImg">
+                        <img src="/img/sto1.png" alt="store img">
+                    </div>
+                    <div class="fd-storeContent">
+                        <div class="fd-storeProductTitle">45cm 아이유 애코백</div>
+                        <div class="fd-storeProductPrice fd-flex fd-align-end">
+                            <sub>KRW</sub> 10,000</div>
+                    </div>
+                </a>
+
+            </li>
+
+        </ul>
+        <!-- footer menu -->
+        <div class="fd-footerMenuBox">
+            <a href="#" class="fd-footerMenu">
+                <img src="/img/menu1.png" alt="menu icon">
+            </a>
+            <a href="#" class="fd-footerMenu">
+                <img src="/img/menu2.png" alt="menu icon">
+            </a>
+            <a href="#" class="fd-footerMenu">
+                <img src="/img/menu3.png" alt="menu icon">
+            </a>
+            <a href="#" class="fd-footerMenu">
+                <img src="/img/menu4.png" alt="menu icon">
+            </a>
+        </div>
+    </section>
+
+    <!-- 결제완료 안내 팝업 -->
+    <div class="fd-popupContainer fd-flex fd-align-center fd-justy-center">
+        <div class="fd-popupBg"></div>
+        <div class="fd-popupBox ask_login_popup fd-flex-col fd-align-center fd-justy-center">
+            <div class="fd-makePopupIcon">
+                <img src="/img/make_popup_icon.png" alt="popup icon">
+            </div>
+            <div class="fd-makePopupTitle finish_cash">
+                <b>결제가 완료 되었습니다!</b>
+            </div>
+            <div class="fd-makePopupContent finish_cash">
+                감사합니다!
+            </div>
+            <div class="fd-makePopupBtn gradient fd-flex fd-align-center fd-justy-center">확&nbsp;&nbsp;&nbsp;&nbsp;인</div>
+        </div>
+    </div>
+    <script src="/common/fullHeight.js"></script>
+    <script>
+        window.onload = function () {
+            var full = new FullHeight('fd-container');
+        }
+    </script>
+</body>
+
+</html>

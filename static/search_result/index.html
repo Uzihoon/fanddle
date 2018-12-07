@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FANDDLE</title>
+    <link rel="stylesheet" href="/common/common.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id="fd-container" class="celupSection storeSection bgFFF resultSection">
+        <div class="fd-searchFixed">
+            <div class="fd-storeHeader">
+                <!-- <div class="fd-backIcon">
+                            <img src="/img/backB.png" alt="back icon">
+                        </div> -->
+                <div class="fd-storeTitle">셀럽페이지</div>
+                <!-- language setting -->
+                <a href="#" class="fd-langBox"></a>
+            </div>
+            <form class="fd-newsSearchBox fd-flex fd-align-center fd-justy-between">
+                <input type="text" class="fd-newsInput" placeholder="원하시는 당신의 셀럽을 검색해 보세요">
+                <button class="fd-newsSearch"></button>
+            </form>
+        </div>
+        <div class="fd-resultContainer">
+            <div class="fd-resultTitle">'아이유' 검색 결과</div>
+            <div class="fd-resultBox">
+                <div class="fd-resultImg ">
+                    <img src="/img/c1.png" alt="star img">
+                </div>
+                <div class="fd-resultShadow"></div>
+                <div class="fd-resultContent fd-flex">
+                    <div class="fd-resultContentLeft fd-flex-col fd-justy-center">
+                        <div class="fd-resultJob">가수</div>
+                        <div class="fd-resultName">아이유</div>
+                        <div class="fd-resultCom">페이브 엔터테인먼트</div>
+                        <div class="fd-resultStar">
+                            <img src="/img/starW.png" alt="star">
+                            <b>10.6K</b>
+                        </div>
+                    </div>
+                    <div class="fd-resultContentRight ">
+                        <a href="#" class="fd-flex fd-align-center">더보기</a>
+                    </div>
+                </div>
+            </div>
+            <div class="fd-resultRecommentBox">
+                <div class="fd-resultRecommentTitle">
+                    '아이유' 관련 검색 셀럽
+                </div>
+                <div class="fd-resultBox">
+                    <div class="fd-resultImg ">
+                        <img src="/img/c1.png" alt="star img">
+                    </div>
+                    <div class="fd-resultShadow"></div>
+                    <div class="fd-resultContent fd-flex">
+                        <div class="fd-resultContentLeft fd-flex-col fd-justy-center">
+                            <div class="fd-resultJob">가수</div>
+                            <div class="fd-resultName">아이유</div>
+                            <div class="fd-resultCom">페이브 엔터테인먼트</div>
+                            <div class="fd-resultStar">
+                                <img src="/img/starW.png" alt="star">
+                                <b>10.6K</b>
+                            </div>
+                        </div>
+                        <div class="fd-resultContentRight ">
+                            <a href="#" class="fd-flex fd-align-center">더보기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="fd-resultBox">
+                    <div class="fd-resultImg ">
+                        <img src="/img/c1.png" alt="star img">
+                    </div>
+                    <div class="fd-resultShadow"></div>
+                    <div class="fd-resultContent fd-flex">
+                        <div class="fd-resultContentLeft fd-flex-col fd-justy-center">
+                            <div class="fd-resultJob">가수</div>
+                            <div class="fd-resultName">아이유</div>
+                            <div class="fd-resultCom">페이브 엔터테인먼트</div>
+                            <div class="fd-resultStar">
+                                <img src="/img/starW.png" alt="star">
+                                <b>10.6K</b>
+                            </div>
+                        </div>
+                        <div class="fd-resultContentRight ">
+                            <a href="#" class="fd-flex fd-align-center">더보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer menu -->
+        <div class="fd-footerMenuBox">
+            <a href="#" class="fd-footerMenu">
+                <img src="/img/menu1.png" alt="menu icon">
+            </a>
+            <a href="#" class="fd-footerMenu">
+                <img src="/img/menu2.png" alt="menu icon">
+            </a>
+            <a href="#" class="fd-footerMenu">
+                <img src="/img/menu3.png" alt="menu icon">
+            </a>
+            <a href="#" class="fd-footerMenu">
+                <img src="/img/menu4.png" alt="menu icon">
+            </a>
+        </div>
+    </section>
+
+    <!-- 로그인 필요 팝업 -->
+    <div class="fd-popupContainer fd-flex fd-align-center fd-justy-center">
+        <div class="fd-popupBg"></div>
+        <div class="fd-popupBox ask_login_popup fd-flex-col fd-align-center fd-justy-center">
+            <div class="fd-makePopupIcon">
+                <img src="/img/make_popup_icon.png" alt="popup icon">
+            </div>
+            <div class="fd-makePopupTitle ask_login_popup_text">
+                <a href="#">로그인</a> 후 이용 할 수 있어요.
+            </div>
+            <div class="fd-makePopupContent ask_login_popup_text">
+                아직도 팬들 회원이 아니라면,
+                <br/><a href="#">회원가입</a>할래요.
+            </div>
+            <div class="fd-makePopupBtn gradient fd-flex fd-align-center fd-justy-center">확&nbsp;&nbsp;&nbsp;&nbsp;인</div>
+        </div>
+    </div>
+    <script src="/common/fullHeight.js"></script>
+    <script>
+        window.onload = function () {
+            var full = new FullHeight('fd-container');
+            full.fullWidth('fd-searchFixStar', 'fd-searchFavoriteStar');
+        }
+    </script>
+</body>
+
+</html>

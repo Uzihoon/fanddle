@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FANDDLE</title>
+    <link rel="stylesheet" href="/common/common.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id="fd-container" class="celupSection">
+        <div class="fd-usingHeader gradient fd-flex fd-align-center">
+            <div class="fd-backIcon">
+                <img src="/img/backW.png" alt="back icon">
+            </div>
+            <div class="fd-profileHead">
+                <!-- <div class="fd-backIcon">
+                                        <img src="/img/backB.png" alt="back icon">
+                                        </div> -->
+                <div class="fd-storeTitle">이용현황</div>
+                <!-- language setting -->
+                <a href="#" class="fd-langBox"></a>
+            </div>
+        </div>
+        <div class="fd-usingTitleBox fd-flex-col fd-align-center fd-justy-center">
+            서비스 수정 및 결제 취소는
+            <br/>고객센터로 문의해 주세요.
+            <div class="fd-usingTitleLinkBox fd-flex fd-justy-around">
+                <a href="#">cs@fanddle.com</a>
+                <a href="#">02-6101-7858</a>
+            </div>
+        </div>
+        <div class="fd-usingContentContainer">
+            <div class="fd-usingContentTotalTitleBox fd-flex fd-align-center fd-justy-center">
+
+            </div>
+            <div class="fd-usingContentServiceBox">
+                <div class="fd-usingServiceTitle">내가 신청한 서비스</div>
+                <ul class="fd-usingServiceList">
+                    <li class="fd-usingService usingFinish fd-flex">
+                        <div class="fd-usingServiceState">
+                            <div class="fd-usingStateBox">완료</div>
+                            <div class="fd-usingTriangle"></div>
+                        </div>
+                        <div class="fd-usingServiceContent">
+                            <div class="fd-usingServiceContentTitle">아이유와 함께하는 수제도시락 이벤트!</div>
+                            <div class="fd-usingServiceContentDate">작성일 2918.05.25</div>
+                            <div class="fd-usingInfoContainer fd-flex-col fd-justy-between">
+                                <div class="fd-usingServiceInfoBox">
+                                    <div class="fd-usingServiceInfoText">40명</div>
+                                    <div class="fd-usingServiceInfoText">서울특별시 동작구 신대방동 시흥대로 596 그랜트홀 앞</div>
+                                    <div class="fd-usingServiceInfoText"> 2018.06. 26 (토) 오전 11시 30분 </div>
+                                </div>
+                                <div class="fd-usingServiceWriteBox">
+                                    <a href="#">서비스 페이지 작성하기</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="fd-usingContentServiceBox">
+                <div class="fd-usingServiceTitle">내가 신청한 프로젝트</div>
+                <ul class="fd-usingServiceList">
+                    <li class="fd-usingService  fd-flex">
+                        <div class="fd-usingServiceState">
+                            <div class="fd-usingStateBox">진행중</div>
+                            <div class="fd-usingTriangle"></div>
+                        </div>
+                        <div class="fd-usingServiceContent">
+                            <div class="fd-usingServiceContentTitle">아이유와 함께하는 수제도시락 이벤트!</div>
+                            <div class="fd-usingServiceContentDate">작성일 2918.05.25</div>
+                            <div class="fd-usingInfoContainer fd-flex-col fd-justy-between">
+                                <div class="fd-usingServiceInfoBox">
+                                    <div class="fd-usingServiceInfoText">40명</div>
+                                    <div class="fd-usingServiceInfoText">서울특별시 동작구 신대방동 시흥대로 596 그랜트홀 앞</div>
+                                    <div class="fd-usingServiceInfoText"> 2018.06. 26 (토) 오전 11시 30분 </div>
+                                </div>
+                                <div class="fd-usingServiceWriteBox">
+                                    <a href="#">운영자의 신청서 확인 대기중</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- footer menu -->
+        <div class="fd-footerMenuBox">
+            <a href="#" class="fd-footerMenu">
+                <img src="/img/menu1.png" alt="menu icon">
+            </a>
+            <a href="#" class="fd-footerMenu">
+                <img src="/img/menu2.png" alt="menu icon">
+            </a>
+            <a href="#" class="fd-footerMenu">
+                <img src="/img/menu3.png" alt="menu icon">
+            </a>
+            <a href="#" class="fd-footerMenu">
+                <img src="/img/menu4.png" alt="menu icon">
+            </a>
+        </div>
+    </section>
+    <script src="/common/fullHeight.js"></script>
+    <script>
+        window.onload = function () {
+            var full = new FullHeight('fd-container');
+        }
+    </script>
+</body>
+
+</html>

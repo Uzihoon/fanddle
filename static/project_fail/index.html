@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FANDDLE</title>
+    <link rel="stylesheet" href="/common/common.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id="fd-container" class="celupSection storeSection bgFFF resultSection">
+        <div class="fd-searchFixed">
+            <div class="fd-storeHeader">
+                <div class="fd-backIcon">
+                    <img src="/img/backB.png" alt="back icon">
+                </div>
+                <div class="fd-storeTitle">프로젝트</div>
+                <!-- language setting -->
+                <a href="#" class="fd-langBox"></a>
+            </div>
+            <form class="fd-newsSearchBox fd-flex fd-align-center fd-justy-between">
+                <input type="text" class="fd-newsInput" placeholder="스타검색">
+                <button class="fd-newsSearch"></button>
+            </form>
+        </div>
+        <div class="fd-resultContainer">
+            <div class="fd-resultTitle">'아이유' 검색 결과</div>
+            <div class="fd-searchFailBox fd-flex-col fd-align-center fd-justy-center">
+                <div class="fd-failIcon">
+                    <img src="/img/fail_icon.png" alt="search fail icon">
+                </div>
+                <div class="fd-failTitle">
+                        이거 실화냐,<br/>
+                        아직 나의 최애 스타페이지가 없다니...<br/>
+                        스타페이지 개설 후 프로젝트 신청할 수 있어요.<br/>
+                </div>
+                <div class="fd-failContent">
+                        
+                    당신의 셀럽이 등록되어 있지 않나요?
+                    <br/>
+                    <a href="#">'스타페이지 개설 신청하기'</a>로 셀럽등록 요청 해주세요!
+                </div>
+                <ul class="fd-failCheckBox">
+                    <li>- 단어의 철자가 정확한지 확인해 보세요.</li>
+                    <li>- 한글을 영어로 혹은 영어를 한글로 입력했는지 확인해 보세요.</li>
+                    <li>- 두 단어 이상의 검색어인 경우, 띄어쓰기를 확인해 보세요.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- footer menu -->
+        <div class="fd-footerMenuBox">
+            <a href="#" class="fd-footerMenu">
+                <img src="/img/menu1.png" alt="menu icon">
+            </a>
+            <a href="#" class="fd-footerMenu">
+                <img src="/img/menu2.png" alt="menu icon">
+            </a>
+            <a href="#" class="fd-footerMenu">
+                <img src="/img/menu3.png" alt="menu icon">
+            </a>
+            <a href="#" class="fd-footerMenu">
+                <img src="/img/menu4.png" alt="menu icon">
+            </a>
+        </div>
+    </section>
+    <script src="/common/fullHeight.js"></script>
+    <script>
+        window.onload = function () {
+            var full = new FullHeight('fd-container');
+            full.fullWidth('fd-searchFixStar', 'fd-searchFavoriteStar');
+        }
+    </script>
+</body>
+
+</html>
