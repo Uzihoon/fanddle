@@ -1,12 +1,13 @@
-## FANDDLE 
+## FANDDLE
 
-연예인 굿즈 구매 및 크라우드펀딩 서비스 웹앱
+Fanddle is funding service application for singers, acts in mobile device
 
 ### How to start
 
 `$ npm start`
 
-### 개발환경 설정
-
+### Set environment
 
 `$ npm install`
+
+![](https://github.com/Uzihoon/fanddle/blob/master/example.png)
